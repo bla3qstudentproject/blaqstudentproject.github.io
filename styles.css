@@ -498,6 +498,34 @@ body {
     color: #000;
 }
 
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #2563eb;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.social-link i {
+    font-size: 18px;
+}
+
 /* Footer */
 .footer {
     background: #fff;
