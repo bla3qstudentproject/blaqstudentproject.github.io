@@ -104,19 +104,23 @@ body {
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 64px;
+    font-size: 80px;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: 30px;
     letter-spacing: -1px;
     text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    padding: 20px 30px;
+    display: inline-block;
 }
 
 .hero-subtitle {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 40px;
-    color: #333;
+    color: #000;
     max-width: 600px;
 }
 
@@ -154,19 +158,20 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
 .about-text p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
 }
 
 /* Initiative Section */
 .initiative {
     padding: 80px 0;
-    background: #f8f8f8;
+    background: #473a4b;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -175,13 +180,15 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .initiative-details p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 .funding-goal {
@@ -201,7 +208,7 @@ body {
 .funding-goal p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #000;
 }
 
 .funding-progress {
@@ -280,6 +287,7 @@ body {
     font-weight: 600;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
 .project-list {
@@ -307,7 +315,7 @@ body {
 .project-item p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #000;
 }
 
 /* Team Section */
@@ -322,6 +330,7 @@ body {
     font-weight: 600;
     margin-bottom: 50px;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
 .team-list {
@@ -349,7 +358,7 @@ body {
 .team-item p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #000;
 }
 
 /* Membership Section */
@@ -365,6 +374,7 @@ body {
     margin-bottom: 50px;
     letter-spacing: -0.5px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .membership-grid {
@@ -390,7 +400,7 @@ body {
 .membership-highlight p {
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #000;
 }
 
 .membership-benefits {
@@ -415,7 +425,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 12px;
-    color: #333;
+    color: #000;
     padding-left: 25px;
     position: relative;
 }
@@ -473,13 +483,14 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
 }
 
 .contact-content > p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 40px;
-    color: #333;
+    color: #000;
 }
 
 .contact-info {
@@ -490,7 +501,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: #333;
+    color: #000;
 }
 
 .contact-info strong {
@@ -511,15 +522,12 @@ body {
     font-weight: 500;
     padding: 10px 15px;
     border: 1px solid #2563eb;
-    border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 .social-link:hover {
     background: #2563eb;
     color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .social-link i {
@@ -605,7 +613,8 @@ body {
     }
     
     .hero-title {
-        font-size: 48px;
+        font-size: 60px;
+        padding: 15px 20px;
     }
     
     .hero-subtitle {
@@ -659,8 +668,9 @@ body {
     }
     
     .hero-title {
-        font-size: 36px;
+        font-size: 48px;
         line-height: 1.2;
+        padding: 12px 16px;
     }
     
     .hero-subtitle {
