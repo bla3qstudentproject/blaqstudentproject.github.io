@@ -28,7 +28,7 @@ body {
     background: #fff;
     z-index: 1000;
     border-bottom: 1px solid #e5e5e5;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .nav-container {
@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .nav-logo a {
@@ -52,6 +53,8 @@ body {
     display: flex;
     list-style: none;
     gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -66,10 +69,27 @@ body {
     opacity: 0.6;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
 /* Hero Section */
 .hero {
-    padding: 120px 0 80px;
+    padding: 140px 0 80px;
     background: #fff;
+    margin-top: 0;
 }
 
 .hero-container {
@@ -504,12 +524,52 @@ body {
         padding: 0 20px;
     }
     
+    .hamburger {
+        display: flex;
+    }
+    
     .nav-menu {
-        gap: 20px;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+        gap: 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
     
     .hero {
-        padding: 100px 0 60px;
+        padding: 120px 0 60px;
     }
     
     .hero-container {
@@ -558,13 +618,21 @@ body {
 }
 
 @media (max-width: 480px) {
-    .nav-menu {
-        flex-direction: column;
-        gap: 15px;
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 100px 0 50px;
     }
     
     .hero-title {
         font-size: 36px;
+        line-height: 1.2;
     }
     
     .hero-subtitle {
@@ -606,6 +674,15 @@ body {
     
     .membership-cta p {
         font-size: 16px;
+    }
+    
+    .funding-goal {
+        padding: 20px;
+    }
+    
+    .donate-button {
+        padding: 12px 24px;
+        font-size: 14px;
     }
 }
 
