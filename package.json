@@ -1,0 +1,28 @@
+{
+  "name": "bla3q-student-project",
+  "version": "1.0.0",
+  "description": "Official website for BLA³Q Student Project - an organization created at our school with the ambitious goal of expanding into a national and international initiative.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "student-project",
+    "education",
+    "collaboration",
+    "innovation",
+    "github-pages"
+  ],
+  "author": "BLA³Q Student Project",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/bla3q-student-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/bla3q-student-project/issues"
+  },
+  "homepage": "https://your-username.github.io/bla3q-student-project"
+}
